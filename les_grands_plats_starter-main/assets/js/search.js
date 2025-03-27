@@ -49,7 +49,8 @@ export async function searchRecipes(query) {
         if (results.length > 0) {
             displaySearch(results);
         } else {
-            resultsContainer.innerHTML = `<p>Aucun résultat trouvé pour "${query}".</p>`;
+            resultsContainer.innerHTML = `<p>Aucune recetet ne correspond à votre recherche... Vous pouvez chercher "tarte aux pommes", "poissons", etc.</p>`;
+
         }
 
         searchWrapper.style.display = 'block';

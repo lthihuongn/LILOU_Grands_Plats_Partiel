@@ -15,12 +15,13 @@ export async function fetchRecipes(type) {
              
              <p>${recipe.description}</p>
              <p>${recipe.ingredients}</p>
+             <p>${recipe.time}</p>
              
          `;
             typesContainer.appendChild(recipeCard);
         });
     } catch (error) {
-        console.error('Erreur lors du chargement des types :', error);
+        console.error("Erreur lors de la récupération des recettes :", error);
     }
 }
 
